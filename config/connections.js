@@ -20,11 +20,11 @@ module.exports = {
      */
     mongo: {
       adapter: 'sails-mongo',
-      host: 'localhost',
-      port: 27017,
-      user: 'nitish',
-      password: 'P@ssw0rd',
-      database: 'sling'
+      host: 'ds015750.mlab.com',
+      port: 15750,
+      user: 'sling',
+      password: 'Abcd1234',
+      database: 'sling-shade'
     },
 
     /**

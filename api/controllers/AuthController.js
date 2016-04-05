@@ -15,6 +15,7 @@ module.exports = {
    * @param res
    */
   signin(req, res) {
+	
     passport.authenticate('local', _.partial(sails.config.passport.onPassportAuth, req, res))(req, res);
   },
 

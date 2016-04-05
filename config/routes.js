@@ -7,5 +7,7 @@
  */
 
 module.exports = {
-  routes: {}
+    routes: {
+        'POST /signup':'AuthController.signup'
+    }
 };

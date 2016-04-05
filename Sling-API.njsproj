@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8d6cb7d9-846e-4016-903c-f9abeca8798b}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>app.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <NameOfLastUsedPublishProfile>shade-api</NameOfLastUsedPublishProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="apiapp.json" />
+    <Content Include="esdoc.json" />
+    <Content Include="Metadata\deploymentTemplates\apiappconfig.azureresource.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Compile Include="app.js" />
+    <Compile Include="config\blueprints.js" />
+    <Compile Include="config\bootstrap.js" />
+    <Compile Include="config\connections.js" />
+    <Compile Include="config\cors.js" />
+    <Compile Include="config\errors.js" />
+    <Compile Include="config\globals.js" />
+    <Compile Include="config\http.js" />
+    <Compile Include="config\log.js" />
+    <Compile Include="config\models.js" />
+    <Compile Include="config\passport.js" />
+    <Compile Include="config\policies.js" />
+    <Compile Include="config\routes.js" />
+    <Compile Include="config\swagger.js" />
+    <Content Include="explorer\index.html" />
+    <Content Include="explorer\o2c.html" />
+    <Compile Include="explorer\swagger-ui.js" />
+    <Compile Include="explorer\swagger-ui.min.js" />
+    <Compile Include="test\bootstrap.js" />
+    <Compile Include="api\blueprints\add.js" />
+    <Compile Include="api\blueprints\create.js" />
+    <Compile Include="api\blueprints\destroy.js" />
+    <Compile Include="api\blueprints\find.js" />
+    <Compile Include="api\blueprints\findone.js" />
+    <Compile Include="api\blueprints\populate.js" />
+    <Compile Include="api\blueprints\remove.js" />
+    <Compile Include="api\blueprints\update.js" />
+    <Compile Include="api\controllers\AuthController.js" />
+    <Compile Include="api\controllers\DocsController.js" />
+    <Compile Include="api\controllers\MentorController.js" />
+    <Compile Include="api\controllers\MentorRequestController.js" />
+    <Compile Include="api\controllers\PingController.js" />
+    <Compile Include="api\controllers\SearchController.js" />
+    <Compile Include="api\controllers\UserController.js" />
+    <Compile Include="api\hooks\CountHook.js" />
+    <Compile Include="api\hooks\PluralizeHook.js" />
+    <Compile Include="api\models\Mentor.js" />
+    <Compile Include="api\models\MentorRequest.js" />
+    <Compile Include="api\models\User.js" />
+    <Compile Include="api\policies\isAuthenticated.js" />
+    <Compile Include="api\responses\badRequest.js" />
+    <Compile Include="api\responses\created.js" />
+    <Compile Include="api\responses\forbidden.js" />
+    <Compile Include="api\responses\negotiate.js" />
+    <Compile Include="api\responses\notFound.js" />
+    <Compile Include="api\responses\ok.js" />
+    <Compile Include="api\responses\serverError.js" />
+    <Compile Include="api\responses\unauthorized.js" />
+    <Compile Include="api\services\CipherService.js" />
+    <Compile Include="api\services\HashService.js" />
+    <Compile Include="api\services\PusherService.js" />
+    <Compile Include="api\hooks\swagger\index.js" />
+    <Compile Include="api\hooks\swagger\lib\spec.js" />
+    <Compile Include="api\hooks\swagger\lib\xfmr.js" />
+    <Compile Include="config\env\development.js" />
+    <Compile Include="config\env\production.js" />
+    <Compile Include="config\env\test.js" />
+    <Compile Include="config\services\cipher.js" />
+    <Compile Include="config\services\hash.js" />
+    <Compile Include="config\services\pusher.js" />
+    <Content Include="explorer\css\print.css" />
+    <Content Include="explorer\css\reset.css" />
+    <Content Include="explorer\css\screen.css" />
+    <Content Include="explorer\css\style.css" />
+    <Content Include="explorer\css\typography.css" />
+    <Content Include="explorer\fonts\droid-sans-v6-latin-700.svg" />
+    <Content Include="explorer\fonts\droid-sans-v6-latin-regular.svg" />
+    <Content Include="explorer\images\explorer_icons.png" />
+    <Content Include="explorer\images\favicon-16x16.png" />
+    <Content Include="explorer\images\favicon-32x32.png" />
+    <Content Include="explorer\images\logo_small.png" />
+    <Content Include="explorer\images\pet_store_api.png" />
+    <Content Include="explorer\images\wordnik_api.png" />
+    <Content Include="explorer\images\throbber.gif" />
+    <Content Include="explorer\images\favicon.ico" />
+    <Compile Include="explorer\lang\en.js" />
+    <Compile Include="explorer\lang\es.js" />
+    <Compile Include="explorer\lang\ja.js" />
+    <Compile Include="explorer\lang\pt.js" />
+    <Compile Include="explorer\lang\ru.js" />
+    <Compile Include="explorer\lang\tr.js" />
+    <Compile Include="explorer\lang\translator.js" />
+    <Compile Include="explorer\lang\zh-cn.js" />
+    <Compile Include="explorer\lib\backbone-min.js" />
+    <Compile Include="explorer\lib\handlebars-2.0.0.js" />
+    <Compile Include="explorer\lib\jquery-1.8.0.min.js" />
+    <Compile Include="explorer\lib\jquery.ba-bbq.min.js" />
+    <Compile Include="explorer\lib\jquery.slideto.min.js" />
+    <Compile Include="explorer\lib\jquery.wiggle.min.js" />
+    <Compile Include="explorer\lib\marked.js" />
+    <Compile Include="explorer\lib\swagger-oauth.js" />
+    <Compile Include="test\fixtures\MentorFixture.js" />
+    <Compile Include="test\fixtures\MentorRequestFixture.js" />
+    <Compile Include="test\fixtures\UserFixture.js" />
+    <Compile Include="test\unit\blueprints\add.test.js" />
+    <Compile Include="test\unit\blueprints\create.test.js" />
+    <Compile Include="test\unit\blueprints\destroy.test.js" />
+    <Compile Include="test\unit\blueprints\find.test.js" />
+    <Compile Include="test\unit\blueprints\findone.test.js" />
+    <Compile Include="test\unit\blueprints\populate.test.js" />
+    <Compile Include="test\unit\blueprints\remove.test.js" />
+    <Compile Include="test\unit\blueprints\update.test.js" />
+    <Compile Include="test\unit\controllers\AuthController.test.js" />
+    <Compile Include="test\unit\controllers\MentorController.test.js" />
+    <Compile Include="test\unit\controllers\MentorRequestController.test.js" />
+    <Compile Include="test\unit\controllers\PingController.test.js" />
+    <Compile Include="test\unit\controllers\SearchController.test.js" />
+    <Compile Include="test\unit\controllers\UserController.test.js" />
+    <Compile Include="test\unit\hooks\CountHook.test.js" />
+    <Compile Include="test\unit\hooks\PluralizeHook.test.js" />
+    <Compile Include="test\unit\models\Mentor.test.js" />
+    <Compile Include="test\unit\models\MentorRequest.test.js" />
+    <Compile Include="test\unit\models\User.test.js" />
+    <Compile Include="test\unit\policies\isAuthenticated.test.js" />
+    <Compile Include="test\unit\responses\badRequest.test.js" />
+    <Compile Include="test\unit\responses\created.test.js" />
+    <Compile Include="test\unit\responses\forbidden.test.js" />
+    <Compile Include="test\unit\responses\negotiate.test.js" />
+    <Compile Include="test\unit\responses\notFound.test.js" />
+    <Compile Include="test\unit\responses\ok.test.js" />
+    <Compile Include="test\unit\responses\serverError.test.js" />
+    <Compile Include="test\unit\responses\unauthorized.test.js" />
+    <Compile Include="test\unit\services\CipherService.test.js" />
+    <Compile Include="test\unit\services\HashService.test.js" />
+    <Compile Include="test\unit\services\PusherService.test.js" />
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config" />
+    <None Include="shade-api.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="api" />
+    <Folder Include="api\blueprints" />
+    <Folder Include="api\controllers" />
+    <Folder Include="api\hooks" />
+    <Folder Include="api\hooks\swagger" />
+    <Folder Include="api\hooks\swagger\lib" />
+    <Folder Include="api\models" />
+    <Folder Include="api\policies" />
+    <Folder Include="api\responses" />
+    <Folder Include="api\services" />
+    <Folder Include="config" />
+    <Folder Include="config\env" />
+    <Folder Include="config\services" />
+    <Folder Include="explorer" />
+    <Folder Include="explorer\css" />
+    <Folder Include="explorer\fonts" />
+    <Folder Include="explorer\images" />
+    <Folder Include="explorer\lang" />
+    <Folder Include="explorer\lib" />
+    <Folder Include="Metadata\" />
+    <Folder Include="Metadata\deploymentTemplates\" />
+    <Folder Include="test" />
+    <Folder Include="test\fixtures" />
+    <Folder Include="test\unit" />
+    <Folder Include="test\unit\blueprints" />
+    <Folder Include="test\unit\controllers" />
+    <Folder Include="test\unit\hooks" />
+    <Folder Include="test\unit\models" />
+    <Folder Include="test\unit\policies" />
+    <Folder Include="test\unit\responses" />
+    <Folder Include="test\unit\services" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -13,7 +13,7 @@ module.exports = {
       type: 'string',
       required: true,
       unique: true,
-      alphanumericdashed: true
+     // alphanumericdashed: true
     },
 
     password: {
